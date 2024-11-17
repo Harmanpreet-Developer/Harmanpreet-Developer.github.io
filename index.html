@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Addoners</title>
+    <title>Fullscreen Embed</title>
     <style>
+        /* Ensure no margins or paddings for the entire document */
         body, html {
             margin: 0;
             padding: 0;
             width: 100%;
             height: 100%;
-            overflow: hidden;
+            overflow: hidden; /* Prevent scrollbars */
         }
+
+        /* Force the iframe to occupy the entire viewport */
         iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
+            border: none; /* Remove border */
         }
     </style>
     <script src="https://anvil.works/embed.js" async></script>
